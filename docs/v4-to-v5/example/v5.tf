@@ -83,7 +83,7 @@ module "eks" {
       launch_template_name            = "self_managed-${local.name}" # Backwards compat
       launch_template_use_name_prefix = false                        # Backwards compat
 
-      instance_type = "r6.16xlarge"
+      instance_type = "r6g.16xlarge"
 
       min_size     = 1
       max_size     = 2
