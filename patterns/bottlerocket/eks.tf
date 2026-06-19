@@ -34,7 +34,7 @@ module "eks" {
   eks_managed_node_groups = {
     bottlerocket = {
       ami_type       = "BOTTLEROCKET_x86_64"
-      instance_types = ["m5.large", "m5a.large"]
+      instance_types = ["m5.xlarge", "m5a.xlarge"]
 
       iam_role_attach_cni_policy = true
       # The below AMI release version is for testing purposes in order to validate Botterocket Update Operator.
